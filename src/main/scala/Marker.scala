@@ -3,7 +3,7 @@ class Marker private(val color:String) {
 
   println("创建" + this)
 
-  override def toString(): String = "颜色标记："+ color
+  override def toString(): String = "颜色标记1："+ color
 
 }
 
