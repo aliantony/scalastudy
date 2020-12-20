@@ -10,11 +10,17 @@ object FunctionTest { //静态对象才能有main
       n*n
     }
     println(f2(100))
+
+    println("----------------")
+    lazy val res = dog.sum(1, 2)
+    //使用res才执行
+    println(res)
   }
 }
 
 class Dog {
-  def sum(a:Int, b:Int): Int = {
+  def sum(a:Int, b:Int=1): Int = { //指定默认值
+    println("惰性结束，开始执行")
     a+b
   }
 
